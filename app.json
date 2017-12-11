@@ -1,0 +1,15 @@
+{
+  "name": "facebook-echo-bot",
+  "description": "Echo echo",
+  "repository": "https://github.com/jboss-outreach/facebook-echo-bot",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/JBoss_logo.svg/2000px-JBoss_logo.svg.png",
+  "keywords": ["facebook", "codein", "fanatic"],
+  "env": {
+    "facebook.verify.token": {
+      "description": "Its a random string that you will need to enter at facebook too."
+    },
+    "facebook.access.token": {
+      "description": "You will find this token at messenger page after selecting page."
+    }
+  }
+}
