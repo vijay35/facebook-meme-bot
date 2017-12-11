@@ -109,7 +109,7 @@ public class FacebookBotVerticle extends AbstractVerticle {
 
     private void updateProperties() {
         
-            VERIFY_TOKEN = System.getProperty("facebook.verify.token", "verty-token-default");
+            VERIFY_TOKEN = System.getProperty("facebook.verify.token", "verify-token-default");
             ACCESS_TOKEN = System.getProperty("facebook.access.token", "access-token-default");
         
     }

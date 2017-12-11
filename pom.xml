@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.example.chatbot</groupId>
-  <artifactId>facebook-echo-bot</artifactId>
+  <artifactId>facebook-meme-bot</artifactId>
   <version>3.5.0</version>
 
   <properties>
@@ -91,7 +91,7 @@
         <version>0.5.6</version>
         <configuration>
           <processTypes>
-            <web> java $JAVA_OPTS -Dhttp.port=$PORT -jar target/facebook-echo-bot-3.5.0-jar-with-dependencies.jar </web>
+            <web> java $JAVA_OPTS -Dhttp.port=$PORT -jar target/facebook-meme-bot-3.5.0-jar-with-dependencies.jar </web>
           </processTypes>
         </configuration>
       </plugin>
