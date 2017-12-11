@@ -1,11 +1,10 @@
-# Facebook echo bot using Vert.x
-![Build Status](https://travis-ci.org/jboss-outreach/facebook-echo-bot.svg?branch=master)
+# Facebook meme bot using Vert.x
+![Build Status](https://travis-ci.org/jboss-outreach/facebook-meme-bot.svg?branch=master)
 
-This project shows how to deploy a facebook echo bot Vert.x 3 applications to Heroku. The same application can be deployed using 3 approaches:
+This project shows how to deploy a facebook meme bot Vert.x 3 applications. The same application can be deployed using 2 approaches:
 
-* Using a one click badge
-* Using the maven plugin
-* Using the git interface
+* Using the maven plugin to heroku
+* Using the maven and ngrok
 
 If you use a fat-jar then deploying on heroku is as simple as one click. The only requirement is to create the Heroku specific [Procfile](../Procfile) with a `Dyno` of type web.
 
@@ -16,7 +15,7 @@ If you use a fat-jar then deploying on heroku is as simple as one click. The onl
 Follow these steps, after installing the [Heroku Toolbelt](https://toolbelt.heroku.com/), to deploy with Maven:
 
 ```sh-session
-$ git clone https://github.com/jboss-outreach/facebook-echo-bot.git
+$ git clone https://github.com/jboss-outreach/facebook-meme-bot.git
 $ heroku create
 $ mvn package heroku:deploy
 ```
@@ -26,9 +25,9 @@ $ mvn package heroku:deploy
 Follow these steps, after installing the [Heroku Toolbelt](https://toolbelt.heroku.com/), to deploy with Maven:
 
 ```sh-session
-$ git clone https://github.com/jboss-outreach/facebook-echo-bot.git
+$ git clone https://github.com/jboss-outreach/facebook-meme-bot.git
 $ mvn clean package 
-$ java -jar target/facebook-echo-bot-3.5.0-jar-with-dependencies.jar
+$ java -jar target/facebook-meme-bot-3.5.0-jar-with-dependencies.jar
 ```
 
 **With localhost you can use https://ngrok.com/ for setting up https tunnel**
@@ -59,7 +58,7 @@ One of way to set is to `-D<prop-name>=<prop-val>`
 
 eg : 
 ```
-$ java -Dhttp.port=$PORT -jar target/facebook-echo-bot-3.5.0-jar-with-dependencies.jar
+$ java -Dhttp.port=$PORT -jar target/facebook-meme-bot-3.5.0-jar-with-dependencies.jar
 ```
 
-When creating a project of your own, you'll need to borrow from the [`Procfile`](https://github.com/jboss-outreach/facebook-echo-bot/blob/master/Procfile) in the root directory of this project, and the `MAVEN_CUSTOM_OPTS` will only be necessary if your app is not the primary module of your Maven project.
+When creating a project of your own, you'll need to borrow from the [`Procfile`](https://github.com/jboss-outreach/facebook-meme-bot/blob/master/Procfile) in the root directory of this project, and the `MAVEN_CUSTOM_OPTS` will only be necessary if your app is not the primary module of your Maven project.
