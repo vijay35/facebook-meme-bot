@@ -22,14 +22,14 @@ public class FacebookBotVerticle extends AbstractVerticle {
     private String ACCESS_TOKEN;
 
     @Override
-    public void start() throws Exception {
+    public void start() {
 
         updateProperties();
 
         Router router = Router.router(vertx);
         router.route().handler(BodyHandler.create());
         router.get("/webhook").handler(this::verify);
-        router.post("/webhook").handler(this::message);
+        router.post("/webhook").blockingHandler(this::message, false);
 
         vertx.createHttpServer().requestHandler(router::accept)
                 .listen(
