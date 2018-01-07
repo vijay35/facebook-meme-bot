@@ -1,6 +1,6 @@
 # Facebook meme bot using Vert.x
 ![Build Status](https://travis-ci.org/jboss-outreach/facebook-meme-bot.svg?branch=master)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1afbc4325c4f4a9ea06d91619e6e1760)](https://www.codacy.com/app/Ani2004/facebook-meme-bot_2/dashboard)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1afbc4325c4f4a9ea06d91619e6e1760)](https://www.codacy.com/app/jboss-outreach/facebook-meme-bot/dashboard)
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1afbc4325c4f4a9ea06d91619e6e1760)](https://www.codacy.com/app/Ani2004/facebook-meme-bot_2/dashboard)
 
