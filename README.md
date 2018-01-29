@@ -9,7 +9,7 @@ This project shows how to deploy a facebook meme bot Vert.x 3 applications. The 
 * Using the maven plugin to heroku
 * Using the maven and ngrok
 
-If you use a fat-jar then deploying on heroku is as simple as one click. The only requirement is to create the Heroku specific [Procfile](https://github.com/jboss-outreach/facebook-meme-bot/blob/master/Procfile.windows) with a `Dyno` of type web.
+If you use a fat-jar then deploying on heroku is as simple as one click. The only requirement is to create the Heroku specific [Procfile](https://github.com/jboss-outreach/facebook-meme-bot/blob/master/blob/master/Procfile.windows) with a `Dyno` of type web.
 
 ## Setup
 
@@ -64,4 +64,4 @@ eg :
 $ java -Dhttp.port=$PORT -jar target/facebook-meme-bot-3.5.0-jar-with-dependencies.jar
 ```
 
-When creating a project of your own, you'll need to borrow from the [`Procfile`](https://github.com/jboss-outreach/facebook-meme-bot/blob/master/Procfile.windows) in the root directory of this project, and the `MAVEN_CUSTOM_OPTS` will only be necessary if your app is not the primary module of your Maven project.
+When creating a project of your own, you'll need to borrow from the [`Procfile`](https://github.com/jboss-outreach/facebook-meme-bot/blob/master/blob/master/Procfile.windows) in the root directory of this project, and the `MAVEN_CUSTOM_OPTS` will only be necessary if your app is not the primary module of your Maven project.
